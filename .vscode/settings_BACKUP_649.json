@@ -1,0 +1,20 @@
+{
+<<<<<<< HEAD
+  "files.autoSave": "afterDelay",
+=======
+  "files.autoSave": "onFocusChange",
+>>>>>>> a9050e8c675333d553a3e24310c8ba0080b619fe
+  "editor.formatOnSave": true,
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}
