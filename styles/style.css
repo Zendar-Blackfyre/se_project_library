@@ -39,6 +39,7 @@
 }
 
 .nav__link {
+  margin: 16px;
   color: #000000;
   text-decoration: none;
   font-weight: bold;
@@ -217,8 +218,6 @@
 
 .event-info__icon_type_pin {
   background-image: url(../images/icon_pin.svg);
-  width: 24px;
-  height: 24px;
 }
 
 .event-info__text {
