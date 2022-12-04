@@ -42,8 +42,9 @@
   font-weight: bold;
   column-gap: 20px;
 }
-
-/* Add the hover state styles for .nav__link here */
+.nav__link:hover {
+  color: #1f69c9;
+}
 
 .header__title {
   font-size: 66px;
@@ -62,7 +63,9 @@
 
 .header__image {
   max-width: 636px;
-  z-index: 1;
+  z-index: -1;
+  position: absolute;
+  left: 15px;
 }
 
 .header__footer {
@@ -82,7 +85,9 @@
   text-decoration: none;
 }
 
-/* Add the hover state styles for .header__link here */
+.header__link {
+  color: #1f69c9;
+}
 
 .header__address {
   margin: 0;
@@ -110,20 +115,34 @@
   margin: 24px 0 0;
 }
 
-/* Add the CSS rule for your new class here. Make sure to place it before .card: parents should precede their children */
-
+.staff__card {
+  max-width: 760px;
+  margin: 68px auto 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+}
 .card {
   background-color: #fff;
   border-radius: 6px;
   padding: 32px 40px 20px 32px;
   box-sizing: border-box;
+  width: 360px;
+  height: 420px;
+  display: flex;
 }
 
 .card__content {
-  width: 100%;
-  height: 100%;
+  width: 360px, 100%;
+  height: 420px, 100%;
   display: flex;
   flex-direction: column;
+  max-width: 760px;
+  height: 68px;
+  bottom: 40px;
+  flex-direction: column;
+  max-width: 760px;
 }
 
 .card__title {
@@ -144,8 +163,6 @@
   font-size: 14px;
   line-height: 20px;
   color: #838383;
-  /* Auto margins applied on a flex item automatically extend specified margin to occupy the extra space in the flex container */
-  /* In our case, this pushes the element down to the bottom */
   margin-top: auto;
 }
 
@@ -310,7 +327,8 @@
 }
 
 .step {
-  /* Add styles */
+  display: flex;
+  justify-content: space-around;
 }
 
 .step__title {
@@ -341,10 +359,12 @@
 
 .about__title {
   margin: 0;
+  margin-right: 120px;
   font-size: 20px;
   line-height: 30px;
   font-weight: 500;
   z-index: 1;
+  max-width: 154px;
 }
 
 .about__content {
@@ -352,10 +372,14 @@
   line-height: 30px;
   font-weight: 400;
   max-width: 660px;
+  z-index: 1;
+  align-self: center;
 }
 
 .about__paragraph {
   margin: 0;
+  margin-bottom: 32px;
+  z-index: 1;
 }
 
 .about__circle {
@@ -363,10 +387,15 @@
   width: 495px;
   height: 495px;
   border-radius: 50%;
+  z-index: 0;
+  position: absolute;
+  top: -121px;
+  left: -91px;
 }
 
 .footer {
   box-sizing: border-box;
+  color: #f2f2f2;
 }
 
 .footer__columns {
@@ -382,7 +411,6 @@
 }
 
 .footer__list {
-  /* The code below removes the default browser styles for lists */
   list-style-type: none;
   padding: 0;
   margin: 0;
